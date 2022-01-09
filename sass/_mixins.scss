@@ -1,0 +1,36 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: $font;
+}
+
+@mixin text {
+    font-family: $font;
+    color: $feature-color-dark;
+    font-size: 1.3rem;
+}
+
+@mixin white-btn {
+    height: 2rem;
+    background: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: 1px solid $feature-color-dark;
+    cursor: pointer;
+    @include center;
+}

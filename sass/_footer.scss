@@ -1,0 +1,30 @@
+.footer {
+    width: 75vw;
+    height: 15vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-top: 1px dashed $feature-color-dark;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5rem;
+
+    &__div {
+        display: flex;
+        margin-left: 3rem;
+    }
+
+    &__h1 {
+        @include text;
+        font-weight: lighter;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    &__p {
+        @include text;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        cursor: pointer;
+    }
+}

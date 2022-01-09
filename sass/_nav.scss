@@ -1,0 +1,103 @@
+.side-nav {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background: $feature-colour-light;
+    @include center-column;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    position: relative;
+
+    &__h1 {
+        @include text;
+        font-weight: lighter;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    &__search-container {
+        width: 60%;
+        @include center-column;
+    }
+
+    &__search-input {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 1rem;
+        border-bottom: 1px dashed $feature-color-dark;
+    }
+
+    &__search-input:focus {
+        outline: none;
+    }
+
+    &__search-input:focus::placeholder {
+        color: transparent;
+    }
+
+    &__search-icon-div {
+        width: 100%;
+        height: 2rem;
+        @include white-btn;
+        @include center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+
+    &__search-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    &__filter-container {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    &__div {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @include center;
+        justify-content: flex-start;
+    }
+
+    &__checkbox-label {
+        @include text;
+        margin-left: 1rem;
+    }
+
+    &__reset-btn {
+        width: 60%;
+        padding-bottom: .2rem;
+        @include white-btn;
+        @include text;
+        cursor: pointer;
+    }
+
+    &__profile-div {
+        background: $feature-colour-light;
+        display: flex;
+        position: absolute;
+        top: 93%;
+        left: 28%;
+        @include center;
+    }
+
+    &__profile-div-img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 360px;
+        margin-right: 1rem;
+        border: 3px solid white;
+        box-shadow: 1px 1px 3px lightgray;
+        cursor: pointer;
+    }
+
+    &__profile-div-p {
+        @include text;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bannerly</title>
+
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <!-- font awesome link -->
+        <script src="https://use.fontawesome.com/ed67033af9.js"></script>
+
+        <!-- jquery ui link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- local css link -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        
+        <nav class="side-nav">
+            <h1 class="side-nav__h1">❀ Bannerly</h1>
+
+            <!-- search div -->
+            <div class="side-nav__search-container">
+                <input class="side-nav__search-input" id="searchInput" placeholder="Search" type="text" autocomplete="off">
+                <div class="side-nav__search-icon-div" onclick="searchBannerCards()" id="searchBtn">
+                    <img class="side-nav__search-icon" src="./images/search-icon.svg" alt="search icon">
+                </div>
+            </div>
+
+            <!-- filters -->
+            <div class="side-nav__filter-container">
+                <div class="side-nav__div">
+                    <input class="side-nav__checkbox" type="radio" name="bannerFilter" onclick="filterBannerCards()" id="cityCheckbox" value="city">
+                    <label class="side-nav__checkbox-label" value="city" for="cityCheckbox">City</label>
+                </div>
+
+                <div class="side-nav__div">
+                    <input class="side-nav__checkbox" type="radio" name="bannerFilter" onclick="filterBannerCards()" id="flowersCheckbox" value="flowers">
+                    <label class="side-nav__checkbox-label" value="flowers" for="flowersCheckbox">Flowers</label>
+                </div>
+
+                <div class="side-nav__div">
+                    <input class="side-nav__checkbox" type="radio" name="bannerFilter" onclick="filterBannerCards()" id="natureCheckbox" value="trees">
+                    <label class="side-nav__checkbox-label" value="nature" for="natureCheckbox">Nature</label>
+                </div>
+
+                <div class="side-nav__div">
+                    <input class="side-nav__checkbox" type="radio" name="bannerFilter" onclick="filterBannerCards()" id="skyCheckbox" value="sky">
+                    <label class="side-nav__checkbox-label" value="sky" for="skyCheckbox">Sky</label>
+                </div>
+            </div>
+
+            <button class="side-nav__reset-btn" onclick="resetBannerCards()" id="resetSearch">Reset</button>
+        </nav>
+
+
+        <!-- local javaScript link -->
+        <script src="./script.js"></script>
+    </body>
+</html>
